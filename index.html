@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ef464645a1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo_blackhat.png" class="logo">
+            <ul id="sidemenu">
+                <li> <a href="#header">Home</a></li>
+                <li> <a href="#about">About</a></li>
+                <li> <a href="#services">Services</a></li>
+                <li> <a href="#portfolio">Portfolio</a></li>
+                <li> <a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Computer Science Undergraduate</p>
+            <h1>Hi, I'm <span>Marvelio</span><br></h1>
+        </div>
+    </div>
+</div>
+
+<!-- ----------about---------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user_backgorund.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Hello! I'm a passionate computer science undergraduate student with a deep love for all things tech. I've been on an exhilarating journey to explore the boundless possibilities of the digital world. From coding algorithms to building interactive websites, my curiosity knows no bounds. I thrive on challenges and enjoy collaborating with like-minded individuals to create innovative solutions. Beyond the screen, I'm an avid problem solver, a lifelong learner, and a believer in the power of technology to shape a better future.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+                        <li><span>Web Development</span><br>Web App Development</li>
+                        <li><span>App Development</span><br>Building Android/iOS apps</li>
+                        <li><span>Machine Learning</span><br>Model Development</li>
+                        <li><span>Python</span><br>Proficient in Python Programming Language</li>
+                        <li><span>Languages</span><br>Proficient in English and Indonesian</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2023</span><br>Event Team for HIMTI Farewell Party 2023.</li>
+                        <li><span>2022</span><br>Technical Team of HISHOT 2022.</li>
+                        <li><span>2021 - Current</span><br>Activist of HIMTI for Second Comission Publucation and Marketing.
+                        <li><span>2019 - 2020</span><br>Mobile Legends Player for Vermillion Esports.</li> 
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2021 - Current</span><br>Computer Science Undergraduate at Bina Nusantara University.</li>
+                        <li><span>2018 - 2021</span><br>High School at SMAK Ipeka Puri Indah.</li>
+                        <li><span>2015 - 2018</span><br>Junior High School at Bukit Sion.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ---------services---------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>I offer a blend of creativity and technical expertise to bring digital vision to life. I craft captivating layouts to ensure seamless user experiences. Let's collaborate to build a website that not only reflects the brand but also engages  audiences effectively.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>UI/UX Design</h2>
+                <p>I specialize in creating intuitive and visually appealing digital experiences. I'm passionate about understanding users' needs and translating them into interfaces that enhance user satisfaction. I'm dedicated to crafting user-centric solutions that elevate products.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>App Design</h2>
+                <p>I'm driven by a deep understanding of user behavior and the latest design trends, ensuring that your app not only looks great but also provides a seamless and intuitive interaction. I'm excited to help create a standout product that users will love.</p>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- -----------portfolio------------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/adex.png">
+                <div class="layer">
+                    <h3>Adex Legends Website</h3>
+                    <p>This is a copy/clone of the official Apex Legends website.</p>
+                    <a href="https://github.com/marveliochandra/ADEX-LEGENDS"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/trackery.jpg">
+                <div class="layer">
+                    <h3>Trackery - Item Price Tracker</h3>
+                    <p>This is a web app for tracking prices of desired items from multiple e-commerces.</p>
+                    <a href="https://github.com/marveliochandra/Trackery-Price-Tracker"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/NN_model.png">
+                <div class="layer">
+                    <h3>Neural Network Paper and Model</h3>
+                    <p>A neural network model to predict Students' length of study. </p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="https://github.com/marveliochandra" class="btn">See More</a>
+    </div>
+</div>
+
+<!-- ---------------contact------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="c">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>contact@marvelio.chandra@binus.ac.id</p>
+                <p><i class="fa-solid fa-square-phone"></i>087777253888</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com/marveliochandra07"><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+                    <a href="https://instagram.com/marveliochandra"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/marveliochandra/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/marveliochandra"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="images/CV - Marvelio Chandra - 2540110533.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Marvelio.</p>
+    </div>
+</div>
+
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu")
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+</script>
+
+<script>
+    const scriptURL = '<https://script.google.com/macros/s/AKfycbwumNU3KDe9XEB6mW-6TOA4jYe4X9YJvxGLo8hPyhbwZNXYwZpDTnxYfqUF5aT1uiqk/exec>'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            }, 5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
